@@ -1,6 +1,11 @@
 package model;
 
 public class Pedra extends Peca {
+	
+	
+	public Pedra (EnumCor cor, int linha, int coluna) {
+		super (cor, linha, coluna, "PEDRA"+cor+".png");
+	}
 
 	public Pedra(EnumCor cor, int linha, int coluna, String imagem) {
 		super(cor, linha, coluna, imagem);

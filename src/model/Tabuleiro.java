@@ -7,8 +7,14 @@ public class Tabuleiro {
 	private EnumCor vez = EnumCor.BRANCO;
 	
 	//Método para criar o tabuleiro
-	public Tabuleiro(int linhas, int colunas) {
-		this.posicoes = new Peca [linhas][colunas]; 
+	public Tabuleiro() {
+		this.posicoes = new Peca [8][8]; 
+		
+		Pedra pedraBranca1 = new Pedra(EnumCor.BRANCO, 0,0);
+		this.adicionaPeca(pedraBranca1);
+		
+		Pedra pedraPreta1 = new Pedra(EnumCor.PRETO, 7,0);
+		this.adicionaPeca(pedraPreta1);
 	}
 	
 	//Método para falar em que posição do tabuleiro a peça está
