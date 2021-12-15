@@ -8,36 +8,36 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import model.EnumCor;
-import model.Tabuleiro;
+import model.Board;
+import model.EnumColor;
 
 public class JChecker extends JFrame {
 	
-	private static JLabel lbVez;
+	private static JLabel lbTurn;
 	
-	private Tabuleiro tabuleiro;
+	private Board board;
 	
 	private JButton btReiniciarJogo;
 	private JButton btPassarVez;
 	
 	public JChecker() {
-		setTitle ("Jogo de damas");
+		setTitle ("Checker's Game");
 		this.setLayout(new BorderLayout());
-		this.tabuleiro = new Tabuleiro();
-		this.add(new JTabuleiro(tabuleiro), BorderLayout.CENTER);
+		this.board = new Board();
+		this.add(new JBoard(board), BorderLayout.CENTER);
 		
-		JPanel pnTopo = new JPanel();                        //Painel do topo
-		lbVez = new JLabel ("Vez da pedra: BRANCA");
-		pnTopo.add(lbVez);
-		this.add(pnTopo, BorderLayout.NORTH);
+		JPanel pnTop = new JPanel();                        //Painel do topo
+		lbTurn = new JLabel ("It's White's turn");
+		pnTop.add(lbTurn);
+		this.add(pnTop, BorderLayout.NORTH);
 		
-		JPanel pnLateral = new JPanel();
-		pnLateral.setLayout(new GridLayout(10,1));
+		JPanel pnSide = new JPanel();					//Painel lateral (Retirar talvez)
+		pnSide.setLayout(new GridLayout(10,1));
 		btReiniciarJogo = new JButton("Reiniciar jogo");
 		btPassarVez = new JButton ("Passar vez");
-		pnLateral.add(btReiniciarJogo);
-		pnLateral.add(btPassarVez);
-		this.add(pnLateral, BorderLayout.WEST);
+		pnSide.add(btReiniciarJogo);
+		pnSide.add(btPassarVez);
+		this.add(pnSide, BorderLayout.WEST);
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Encerra a aplicação quando fecha a janela
 		
@@ -45,8 +45,8 @@ public class JChecker extends JFrame {
 		this.setVisible(true);
 	}
 	
-	public static void setVez(EnumCor corVez) {
-		lbVez.setText("Vez da pedra: "+corVez);
+	public static void setTurn(EnumColor turnColor) {
+		lbTurn.setText("It's "+turnColor+"'s turn");
 	}
 	
 	public static void main (String args[]) {
