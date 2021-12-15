@@ -4,7 +4,7 @@ public class Pedra extends Peca {
 	
 	
 	public Pedra (EnumCor cor, int linha, int coluna) {
-		super (cor, linha, coluna, "PEDRA"+cor+".png");
+		super (cor, linha, coluna, "C:/"+cor+".png");
 	}
 
 	public Pedra(EnumCor cor, int linha, int coluna, String imagem) {
