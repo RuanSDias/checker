@@ -45,9 +45,9 @@ public class Board {
 		return this.pieces[line][column];
 	}
 	
-	public void setPeca(Piece peca) {
-		this.pieces[peca.getLine()][peca.getColumn()] = peca;
-		peca.setBoard(this);
+	public void setPiece(Piece piece) {
+		this.pieces[piece.getLine()][piece.getColumn()] = piece;
+		piece.setBoard(this);
 	}
 	
 	//Método para popular o tabuleiro com peças
@@ -68,11 +68,11 @@ public class Board {
 	}
 	
 	public void movePiece(Piece piece, int newLine, int newColumn) {
-		if (piece.movementValidation(newLine, newColumn)) {
+		if (piece.movementValidation(newLine, newColumn, piece)) {
 			this.pieces[piece.getLine()][piece.getColumn()] = null;
 			piece.setLine(newLine);
 			piece.setColumn(newColumn);
-			this.setPeca(piece);
+			this.setPiece(piece);
 			this.pieceSelect(piece);
 			this.reverseTurn();
 		}
@@ -97,7 +97,7 @@ public class Board {
 			if (this.selectedPiece == piece) {
 				this.pieceSelect(piece);
 			} else {
-				if (piece == null || !piece.getColor().equals(this.selectedPiece.getColor())) {
+				if (piece == null  /*!piece.getColor().equals(this.selectedPiece.getColor())*/) {
 					this.movePiece(this.selectedPiece, line, column); //verificar se está movendo
 				}
 			}
