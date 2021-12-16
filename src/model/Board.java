@@ -78,6 +78,17 @@ public class Board {
 		}
 	}
 	
+	/*public void take(Piece piece, int newLine, int newColumn) {
+		if (piece.movementValidation(newLine, newColumn, piece)) {
+			this.pieces[piece.getLine()][piece.getColumn()] = null;
+			piece.setLine(newLine+1);
+			piece.setColumn(newColumn+1);
+			this.setPiece(piece);
+			this.pieceSelect(piece);
+			this.reverseTurn();
+		}
+	}*/
+	
 	public void reverseTurn() {
 		if (this.turn.equals(EnumColor.WHITE)) {
 			this.turn = EnumColor.BLACK;
@@ -97,9 +108,11 @@ public class Board {
 			if (this.selectedPiece == piece) {
 				this.pieceSelect(piece);
 			} else {
-				if (piece == null  /*!piece.getColor().equals(this.selectedPiece.getColor())*/) {
+				if (piece == null) {
 					this.movePiece(this.selectedPiece, line, column); //verificar se está movendo
-				}
+				} /*else {
+					this.comer(this.selectedPiece, line, column);
+				}*/
 			}
 		}
 	}

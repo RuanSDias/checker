@@ -17,6 +17,7 @@ public abstract class Piece {
 	}
 	
 	public abstract boolean movementValidation(int destinationLine, int destinationColumn, Piece piece);
+	public abstract boolean takeValidation(int destinationLine, int destinationColumn, Piece piece);
 
 	public EnumColor getColor() {
 		return color;

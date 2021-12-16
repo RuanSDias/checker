@@ -14,10 +14,6 @@ public class Stone extends Piece {
 	@Override
 	public boolean movementValidation(int destinationLine, int destinationColumn, Piece piece) {
 		
-		/*if(destinationLine == piece.getLine()+1 && destinationColumn == piece.getColumn()+1) {
-			return true;
-		}*/
-		
 		if(piece.getLine() == destinationLine) {
 			return false;
 		}
@@ -39,6 +35,11 @@ public class Stone extends Piece {
 			}
 		}
 		
+		return true;
+	}
+
+	@Override
+	public boolean takeValidation(int destinationLine, int destinationColumn, Piece piece) {
 		return true;
 	}
 

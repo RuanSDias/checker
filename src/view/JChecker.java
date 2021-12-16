@@ -31,13 +31,13 @@ public class JChecker extends JFrame {
 		pnTop.add(lbTurn);
 		this.add(pnTop, BorderLayout.NORTH);
 		
-		JPanel pnSide = new JPanel();					//Painel lateral (Retirar talvez)
+		/*JPanel pnSide = new JPanel();					//Painel lateral (Retirar talvez)
 		pnSide.setLayout(new GridLayout(10,1));
 		btReiniciarJogo = new JButton("Reiniciar jogo");
 		btPassarVez = new JButton ("Passar vez");
 		pnSide.add(btReiniciarJogo);
 		pnSide.add(btPassarVez);
-		this.add(pnSide, BorderLayout.WEST);
+		this.add(pnSide, BorderLayout.WEST);*/
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Encerra a aplicação quando fecha a janela
 		

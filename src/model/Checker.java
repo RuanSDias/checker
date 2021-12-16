@@ -15,6 +15,13 @@ public class Checker extends Piece {
 	public boolean movementValidation(int destinationLine, int destinationColumn, Piece piece) {
 		return true;
 	}
+
+
+	@Override
+	public boolean takeValidation(int destinationLine, int destinationColumn, Piece piece) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 
