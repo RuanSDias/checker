@@ -55,6 +55,7 @@ Seu objetivo é capturar todas as peças do oponente ou deixá-lo impossibilitad
 
 ## Autor
 
+<br>
 <div align="center">
   <table>
     <tr>
