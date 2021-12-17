@@ -1,27 +1,27 @@
-
 #  Checker
 
 Com o objetivo de capturar todas as peças do adversário, este jogo consegue entreter crianças e adultos de todas as idades.
 
 Estimula e exercita a percepção abstrata espacial, a criatividade, o raciocínio e a relação do jogo e da brincadeira como um agente cultural e social vivo, dinâmico e afinado com o nosso tempo.
 
-<h4 align="center"> 
+<br>
+<h3 align="center"> 
 	🚧  Em construção...  🚧
-</h4>
-
+</h3>
 <br>
 
 ## Tabela de conteúdos
 
    * [Sobre](#checker)
-   * [Tabela de Conteudo](#tabela-de-conteudos)
+   * [Tabela de Conteudo](#tabela-de-conteúdos)
    * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
+      * [Pré Requisitos](#pré-requisitos)
       * [Passo a passo](#passo-a-passo)
    * [Play Game](#play-game)
    * [Autor](#autor)
    
 <br>
+
 ## Como Usar
 
 ### Pré-requisitos
@@ -31,6 +31,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina uma IDE de s
 [Intellij](https://www.jetbrains.com/pt-br/idea/download/#section=windows), [VSCode](https://code.visualstudio.com/download), etc. )
 
 <br>
+
 ### Passo a passo
 
 + Na branch main, faça o "[Download ZIP](https://github.com/RuanSDias/checker/archive/refs/heads/main.zip)" dos arquivos
@@ -40,6 +41,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina uma IDE de s
 + Pronto, divirta-se!
 
 <br>
+
 ## Play Game
 
 O jogo de Damas permite dois participantes por vez, que usam um tabuleiro e algumas peças 
@@ -49,6 +51,7 @@ Seu objetivo é capturar todas as peças do oponente ou deixá-lo impossibilitad
 
 #### Para entender melhor sobre o jogo, [clique aqui](https://www.megajogos.com.br/damas-online/regras).
 
+<br>
 
 ## Autor
 
