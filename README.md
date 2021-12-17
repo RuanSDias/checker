@@ -36,7 +36,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina uma IDE de s
 
 + Na branch main, faça o "[Download ZIP](https://github.com/RuanSDias/checker/archive/refs/heads/main.zip)" dos arquivos
 + Extraia o conteúdo da pasta
-+ Inicie sua IDE e importe a pasta "chocker"
++ Inicie sua IDE e importe a pasta "checker"
 + No package "View", execute a classe "JChecker"
 + Pronto, divirta-se!
 
